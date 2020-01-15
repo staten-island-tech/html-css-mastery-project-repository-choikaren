@@ -1,0 +1,223 @@
+@import "./_variables.scss";
+
+
+.navigationBar-banner {
+  visibility: hidden;
+  position: absolute;
+  // margin-top: 1.5rem;
+}
+
+.navigationBar-menu {
+  background-color: $secondaryPink;
+  font-weight: bold;
+  font-family: $mainFont;
+  cursor: pointer;
+  color: $mainBlue;
+  position: fixed;
+  margin: 1rem;
+  width: 35%;
+  text-align: center;
+  height: 4rem;
+  transition: all 0.1s ease-out;
+  z-index: 1;
+}
+
+.navigationBar-menu:hover {
+  background-color: $mainPink;
+}
+
+#menu {
+  background-color: $secondaryYellow;
+  margin: 1rem;
+  text-align: center;
+  width: 35%;
+  top: 4.5rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.1s ease-out;
+  z-index: 1;
+}
+
+.menu-dropDown-buttons {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  font-weight: bold;
+  font-family: $mainFont;
+  cursor: pointer;
+  color: $mainBlue;
+  transition: all 0.1s ease-out;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-style: italic;
+}
+
+.menu-dropDown-buttons:hover {
+  background-color: $mainYellow;
+}
+
+.buttons-text {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons-text:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  transition: all 0.1s ease-out;
+}
+
+.menu-button {
+  border: none;
+  background-color: inherit;
+  font-weight: bold;
+  font-family: $mainFont;
+  cursor: pointer;
+  color: $mainBlue;
+  transition: all 0.1s ease-out;
+  font-size: 0.8rem;
+}
+
+#menu-button-text {
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2.5rem;
+}
+
+.menu-dropDown {
+  visibility: hidden;
+}
+
+.menu-dropDown:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button-popUp {
+  top: 50%;
+  left: 50%;
+}
+
+.banner {
+  text-align: center;
+  background-color: $secondaryPink;
+}
+
+.banner-buttons {
+  border: none;
+  background-color: inherit;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: $mainFont;
+  cursor: pointer;
+  color: $mainBlue;
+  transition: all 0.1s ease-out;
+
+}
+
+.banner-buttons:hover {
+  transform: scale(1.2);
+  background: $mainYellow;
+  z-index: 2;
+}
+
+.popUp-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.1s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+.popUp-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popUp-box {
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $mainYellow;
+  width: 30%;
+  position: relative;
+  color: $mainBlue;
+  font-family: $mainFont;
+  z-index: 3;
+}
+
+.popUp-box h2 {
+  margin-top: 0;
+  background: $mainYellow;
+  font-family: $mainFont;
+}
+.popUp-box .popUp-box-closeSymbol {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  transition: all 0.1s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popUp-box-closeSymbol:hover {
+  transform: scale(1.5);
+}
+
+.link {
+  text-decoration: none;
+}
+
+@media (min-width: 400px) {
+  .navigationBar-banner {
+    visibility: visible;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .banner {
+    margin: 1rem;
+    overflow: hidden;
+  }
+
+  .navigationBar-menu {
+    visibility: hidden;
+  }
+
+  #newButtons {
+    visibility: hidden;
+  }
+  .menu-dropDown-buttons {
+    visibility: hidden;
+  }
+
+  // .top {
+  //   margin-top: 2rem;
+  // }
+}
+
+@media (min-width: 700px) {
+  .popUp-box .popUp-box-closeSymbol {
+    top: 15px;
+    right: 20px;
+  }
+  .banner-buttons {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+  }
+  // .top {
+  //   margin-top: 3rem;
+  // }
+}
