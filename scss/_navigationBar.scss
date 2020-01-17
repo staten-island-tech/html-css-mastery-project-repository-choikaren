@@ -9,6 +9,7 @@
 
 .navigationBar-menu {
   background-color: $secondaryPink;
+  background-color: none;
   font-weight: bold;
   font-family: $mainFont;
   cursor: pointer;
@@ -19,7 +20,7 @@
   text-align: center;
   height: 4rem;
   transition: all 0.1s ease-out;
-  z-index: 1;
+  z-index: 5;
 }
 
 .navigationBar-menu:hover {
@@ -51,6 +52,7 @@
   font-size: 1rem;
   padding: 0.5rem;
   font-style: italic;
+  z-index: 5;
 }
 
 .menu-dropDown-buttons:hover {
@@ -74,7 +76,6 @@
   font-weight: bold;
   font-family: $mainFont;
   cursor: pointer;
-  color: $mainBlue;
   transition: all 0.1s ease-out;
   font-size: 0.8rem;
 }
@@ -84,6 +85,7 @@
   text-align: center;
   vertical-align: middle;
   font-size: 2.5rem;
+  color: $mainBlue;
 }
 
 .menu-dropDown {
@@ -101,14 +103,14 @@
 }
 
 .banner {
-  text-align: center;
+  text-align: right;
   background-color: $secondaryPink;
 }
 
 .banner-buttons {
   border: none;
   background-color: inherit;
-  padding: 1rem 1.5rem;
+  padding: 1rem 3rem;
   font-size: 1.5rem;
   font-weight: bold;
   font-family: $mainFont;
@@ -199,9 +201,12 @@
   #newButtons {
     visibility: hidden;
   }
-  .menu-dropDown-buttons {
-    visibility: hidden;
-  }
+  // .menu-dropDown-buttons {
+  //   visibility: hidden;
+  // }
+  // .menu {
+  //   visibility: hidden;
+  // }
 
   // .top {
   //   margin-top: 2rem;
@@ -214,7 +219,7 @@
     right: 20px;
   }
   .banner-buttons {
-    padding: 1rem 3rem;
+    padding: 1.5rem 6rem;
     font-size: 2rem;
   }
   // .top {
