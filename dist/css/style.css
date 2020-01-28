@@ -241,6 +241,14 @@
   src: url(font\Zimra-Regular.woff);
 }
 
+#restaurantWelcomeVideo {
+  position: fixed;
+  z-index: -100;
+  height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
+
 .object {
   height: 100%;
   width: 100%;
@@ -262,6 +270,7 @@
   display: table-cell;
   vertical-align: middle;
   font-weight: bold;
+  z-index: 2;
 }
 
 .content {
@@ -282,7 +291,6 @@
 }
 
 .one {
-  background-image: url("img/RestaurantAd.png");
   -webkit-backdrop-filter: brightness(0.1);
           backdrop-filter: brightness(0.1);
   height: 100vh;
@@ -294,6 +302,7 @@
 
 .two {
   background-image: url("img/fire.jpg");
+  height: 50vh;
 }
 
 .three {
