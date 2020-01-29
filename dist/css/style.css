@@ -246,7 +246,6 @@ html {
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
   padding: 0;
   margin: 0;
   display: table;
@@ -256,12 +255,13 @@ html {
   margin: 0;
   color: #ffc400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 50px;
+  font-size: 5rem;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
   font-weight: bold;
   z-index: 2;
+  text-shadow: 5px 5px 5px #660700;
 }
 
 .content {
@@ -278,15 +278,10 @@ html {
   font-style: italic;
 }
 
-.content p {
-  margin: 40px;
-}
-
 #restaurantWelcome-Video {
   position: fixed;
-  min-width: 100%;
-  height: 100%;
-  background-size: cover;
+  height: 100vh;
+  min-width: 100vw;
   z-index: -1;
   -webkit-filter: contrast(1.3);
           filter: contrast(1.3);
@@ -294,10 +289,6 @@ html {
 
 #restaurantWelcome-Text {
   letter-spacing: 1.5rem;
-}
-
-.one {
-  height: 100vh;
 }
 
 #restaurantDescription {
@@ -308,13 +299,20 @@ html {
   #restaurantWelcome-Text {
     letter-spacing: 2rem;
     padding: 10rem;
+    font-size: 6rem;
   }
 }
 
-.chineseCuisine-background {
-  height: 2rem;
-  position: fixed;
-  z-index: 5;
+@media (min-width: 700px) {
+  #restaurantWelcome-Text {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #restaurantWelcome-Text {
+    font-size: 9rem;
+  }
 }
 
 .two {
