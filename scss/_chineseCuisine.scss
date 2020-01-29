@@ -1,0 +1,14 @@
+@import "./_variables.scss";
+
+  .chineseCuisine-background {
+    height: 2rem;
+    position: fixed;
+    z-index: 5;
+  }
+
+  .three {
+    background-image: url("dist\css\img\EastHarborFront.jpg");
+  }
+  .four {
+    background-image: url("img/RestaurantAd.png");
+  }

@@ -8,12 +8,11 @@
 }
 
 .navigationBar-menu {
-  background-color: $secondaryPink;
-  background-color: none;
+  background-color: rgba(255, 0, 0, 0.8);
   font-weight: bold;
   font-family: $mainFont;
   cursor: pointer;
-  color: $mainBlue;
+  color: $mainRed;
   position: fixed;
   margin: 1rem;
   width: 35%;
@@ -47,7 +46,7 @@
   font-weight: bold;
   font-family: $mainFont;
   cursor: pointer;
-  color: $mainBlue;
+  color: $mainRed;
   transition: all 0.1s ease-out;
   font-size: 1rem;
   padding: 0.5rem;
@@ -56,7 +55,7 @@
 }
 
 .menu-dropDown-buttons:hover {
-  background-color: $mainYellow;
+  background-color: $secondaryYellow;
 }
 
 .buttons-text {
@@ -85,7 +84,7 @@
   text-align: center;
   vertical-align: middle;
   font-size: 2.5rem;
-  color: $mainBlue;
+  color: $mainRed;
 }
 
 .menu-dropDown {
@@ -105,6 +104,7 @@
 .banner {
   text-align: right;
   background-color: $secondaryPink;
+  padding-right: 2.5rem;
 }
 
 .banner-buttons {
@@ -115,14 +115,16 @@
   font-weight: bold;
   font-family: $mainFont;
   cursor: pointer;
-  color: $mainBlue;
+  color: $mainRed;
   transition: all 0.1s ease-out;
+  // margin-right: 1rem;  
+
 
 }
 
 .banner-buttons:hover {
   transform: scale(1.2);
-  background: $mainYellow;
+  background: $secondaryYellow;
   z-index: 2;
 }
 
@@ -149,17 +151,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: $mainYellow;
+  background: $secondaryYellow;
   width: 30%;
   position: relative;
-  color: $mainBlue;
+  color: $mainRed;
   font-family: $mainFont;
   z-index: 3;
 }
 
 .popUp-box h2 {
   margin-top: 0;
-  background: $mainYellow;
+  background: $secondaryYellow;
   font-family: $mainFont;
 }
 .popUp-box .popUp-box-closeSymbol {
@@ -186,7 +188,7 @@
     visibility: visible;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
   }
 
   .banner {
@@ -219,8 +221,9 @@
     right: 20px;
   }
   .banner-buttons {
-    padding: 1.5rem 6rem;
+    padding: 1rem 4rem;
     font-size: 2rem;
+    margin-right: 3rem;
   }
   // .top {
   //   margin-top: 3rem;
