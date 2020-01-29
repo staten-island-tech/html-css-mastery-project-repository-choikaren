@@ -1,12 +1,15 @@
-@charset "UTF-8";
-@font-face {
-  font-family: ZimraRegular;
-  src: url(dist/css/font\Zimra-Regular.woff);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@font-face {
-  font-family: ZimraRegular;
-  src: url(dist/css/font\Zimra-Regular.woff);
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
 }
 
 .navigationBar-banner {
@@ -238,11 +241,6 @@
   }
 }
 
-@font-face {
-  font-family: ZimraRegular;
-  src: url(dist/css/font\Zimra-Regular.woff);
-}
-
 .background {
   height: 100%;
   width: 100%;
@@ -313,36 +311,22 @@
   }
 }
 
-@font-face {
-  font-family: ZimraRegular;
-  src: url(dist/css/font\Zimra-Regular.woff);
-}
-
 .chineseCuisine-background {
   height: 2rem;
   position: fixed;
   z-index: 5;
 }
 
+.two {
+  background-image: url("img/EastHarborFront.jpg");
+  background-position: top;
+}
+
 .three {
-  background-image: url("distssimgêstHarborFront.jpg");
+  background-image: url("img/RestaurantAd.png");
 }
 
 .four {
   background-image: url("img/RestaurantAd.png");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

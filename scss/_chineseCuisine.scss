@@ -6,9 +6,15 @@
     z-index: 5;
   }
 
-  .three {
-    background-image: url("dist\css\img\EastHarborFront.jpg");
+  .two {
+    background-image: url("img/EastHarborFront.jpg");
+    background-position: top;
   }
+
+  .three {
+    background-image: url("img/RestaurantAd.png");
+  }
+
   .four {
     background-image: url("img/RestaurantAd.png");
   }
