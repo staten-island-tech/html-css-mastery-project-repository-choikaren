@@ -298,7 +298,6 @@ html {
 @media (min-width: 400px) {
   #restaurantWelcome-Text {
     letter-spacing: 2rem;
-    padding: 10rem;
     font-size: 6rem;
   }
 }
