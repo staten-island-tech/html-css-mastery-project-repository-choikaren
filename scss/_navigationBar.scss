@@ -4,13 +4,24 @@
 .navigationBar-banner {
   visibility: hidden;
   position: absolute;
+  background: linear-gradient(
+    to bottom, 
+    $mainRed,
+    rgba(255, 0, 0, 0)
+  )
+  ;
   // margin-top: 1.5rem;
 }
 
 .navigationBar-menu {
-  background-color: rgba(255, 0, 0, 0.8);
+  // background-color: rgba(255, 0, 0, 0.8);
+  background: linear-gradient(
+    to bottom, 
+    $mainRed,
+    rgba(255, 0, 0, 0)
+  );
   font-weight: bold;
-  font-family: $mainFont;
+  font-family: $secondaryFont;
   cursor: pointer;
   color: $mainRed;
   position: fixed;
@@ -23,7 +34,7 @@
 }
 
 .navigationBar-menu:hover {
-  background-color: $mainPink;
+  background-color: $mainRed;
 }
 
 #menu {
@@ -44,7 +55,7 @@
   background-color: inherit;
   border: none;
   font-weight: bold;
-  font-family: $mainFont;
+  font-family: $secondaryFont;
   cursor: pointer;
   color: $mainRed;
   transition: all 0.1s ease-out;
@@ -57,6 +68,7 @@
 .menu-dropDown-buttons:hover {
   background-color: $secondaryYellow;
 }
+
 
 .buttons-text {
   width: 100%;
@@ -73,18 +85,20 @@
   border: none;
   background-color: inherit;
   font-weight: bold;
-  font-family: $mainFont;
+  font-family: $secondaryFont;
   cursor: pointer;
   transition: all 0.1s ease-out;
   font-size: 0.8rem;
 }
 
 #menu-button-text {
-  align-content: center;
-  text-align: center;
-  vertical-align: middle;
+  margin: auto;
+  // align-content: center;
+  // text-align: center;
+  // vertical-align: middle;
   font-size: 2.5rem;
-  color: $mainRed;
+  font-family: $secondaryFont;
+  color: $secondaryYellow;
 }
 
 .menu-dropDown {
@@ -102,9 +116,15 @@
 }
 
 .banner {
-  text-align: right;
-  background-color: $secondaryPink;
-  padding-right: 2.5rem;
+  text-align: center;
+  // background: linear-gradient(
+  //   to bottom, 
+  //   red,
+  //   rgba(255, 0, 0, 0)
+  // )
+  // ;
+  // background-color: $secondaryPink;
+  // padding-right: 2.5rem;
 }
 
 .banner-buttons {
@@ -113,10 +133,13 @@
   padding: 1rem 3rem;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: $mainFont;
+  font-family: $secondaryFont;
+  text-shadow: .1rem .1rem .1rem $mainRed;
   cursor: pointer;
-  color: $mainRed;
+  color: $secondaryYellow;
   transition: all 0.1s ease-out;
+  // font-style: italic;
+  letter-spacing: .3rem;
   // margin-right: 1rem;  
 
 
@@ -126,6 +149,9 @@
   transform: scale(1.2);
   background: $secondaryYellow;
   z-index: 2;
+  color: $mainRed;
+  transition: all 0.1s ease-out;
+
 }
 
 .popUp-overlay {
@@ -155,14 +181,14 @@
   width: 30%;
   position: relative;
   color: $mainRed;
-  font-family: $mainFont;
+  font-family: $secondaryFont;
   z-index: 3;
 }
 
 .popUp-box h2 {
   margin-top: 0;
   background: $secondaryYellow;
-  font-family: $mainFont;
+  font-family: $secondaryFont;
 }
 .popUp-box .popUp-box-closeSymbol {
   position: absolute;
@@ -223,9 +249,13 @@
   .banner-buttons {
     padding: 1rem 4rem;
     font-size: 2rem;
-    margin-right: 3rem;
+
   }
-  // .top {
-  //   margin-top: 3rem;
-  // }
+}
+
+@media (min-width:1000px) {
+  .banner {
+    text-align: right;
+    margin-right: 8rem;
+  }
 }
