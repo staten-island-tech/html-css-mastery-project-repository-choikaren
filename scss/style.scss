@@ -8,22 +8,24 @@
     margin: 0;
     box-sizing: border-box;
     width: 100%;
-    font-family: 'Yeseva One', cursive;
-font-family: 'Reem Kufi', sans-serif;
-font-family: 'Rozha One', serif;
-font-family: 'Spectral SC', serif;
-font-family: 'Cinzel', serif;
-font-family: 'Cinzel Decorative', cursive;
+//     font-family: 'Yeseva One', cursive;
+// font-family: 'Reem Kufi', sans-serif;
+// font-family: 'Rozha One', serif;
+// font-family: 'Spectral SC', serif;
+// font-family: 'Cinzel', serif;
+// font-family: 'Cinzel Decorative', cursive;
   }
   
 @import "./_variables.scss";
 
 @import "./_navigationBar.scss";
 
-
 @import "./_welcomePage.scss";
 
 @import "./_chineseCuisine.scss";
 
+@import "./_about.scss";
+
+@import "./_general.scss";
 
 

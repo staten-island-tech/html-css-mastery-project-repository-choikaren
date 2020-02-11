@@ -2,16 +2,95 @@
 
 
 
-  .two {
-    background-image: url("img/EastHarborFront.jpg");
-    background-position: center;
-    height: 50vh;
+.chineseCuisine {
+  background-image: url("img/dimSum.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+  #chineseCuisine {
+    // margin: 3rem;
+    padding: 1.75rem;
+    background-color:$mainYellow;
+    height: 40vh;
   }
 
-  .three {
-    background-image: url("img/RestaurantAd.png");
+  #chineseCuisine-Text {
+    color: $secondaryYellow;
   }
 
-  .four {
-    background-image: url("img/RestaurantAd.png");
+
+
+  .image-front {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 90%;
+    outline: 4px $secondaryYellow solid;
+    outline-offset: 15px;
+    transition: ease-in-out 0.25s;
+  }
+
+  .image-front:hover {
+    outline-offset: 0;
+  }
+
+  .menuSection {
+    display: flex;
+    flex-direction: row;
+    background-color: $mainYellow;
+  }
+
+  .menuSection-category {
+    text-align: center;
+    color:$mainRed;
+    padding: 2rem 3rem;
+  }
+
+
+  .menuSection-categoryItems {
+    display: none;
+  }
+
+@media (min-width: 400px) {
+  #chineseCuisine {
+    padding: 3rem;
+  }
+
+  .image-front {
+    width: 80%;
+  }
+
+  .menuSection-category {
+    font-size: 3rem;
+    padding: 4rem 5rem;
+  }
+
+}
+
+  @media (min-width: 700px) { 
+
+    .image-front {
+      width: 85%;
+   }
+
+   .menuSection-category {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+  }
+
+  }
+
+  @media (min-width: 1000px) {
+
+    .image-front {
+      width: 80%;
+    }
+
+    .menuSection-category {
+
+      font-size: 4.5rem;
+      padding: 6rem 4rem;
+    }
+
   }

@@ -1,85 +1,43 @@
 @import "./_variables.scss";
 
-.background {
-  height: 100%;
-  width: 100%;
-  // background-size: cover;
-  // background-attachment: fixed;
-
-  padding: 0;
-  margin: 0;
-  display: table;
-}
-
-.text {
-  margin: 0;
-  color: $secondaryYellow;
-  font-family: $mainFont;
-  font-size: 5rem;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  font-weight: bold;
-  z-index: 2;
-  text-shadow: .3rem .3rem .3rem $mainRed;
-}
-.content {
-  position: relative;
-  padding: 6rem 4rem;
-  box-shadow: 0 0 50rem rgba(0, 0, 0, 1);
-  font-size: 24px;
-  // letter-spacing: 0.5rem;
-  background-color: $mainRed;
-  // font-family: $mainFont;
-  color: $secondaryYellow;
-  font-weight: bold;
-  text-align: center;
-  font-style: italic;
-}
-
-#restaurantWelcome {
-  width: 100vw;
-}
-
 #restaurantWelcome-Video {
   position: fixed;
   height: 100vh;
   min-width: 100%;
   z-index: -1;
-  filter: contrast(1.3);
+  // filter: contrast(1.3);
+  // filter: brightness(.65);
+  background-color: $mainRed;
+  // padding-bottom: 10rem;
 }
 
 #restaurantWelcome-Text {
-  letter-spacing: 1.5rem;
+  letter-spacing: .5rem;
 }
 
 #restaurantDescription {
   text-align: center;
+  background: $mainRed;
+  color: $secondaryYellow;
+  padding: 6rem 4rem;
 }
 
-
-@media (min-width:400px) {
+@media (min-width: 400px) {
   #restaurantWelcome-Text {
-    letter-spacing: 2rem;
+    letter-spacing: 1rem;
     padding: 10%;
-    font-size: 5rem;
+    font-size: 6.5rem;
   }
 
   .content {
     letter-spacing: 0.5rem;
   }
-
 }
 
-@media (min-width:700px) {
-  #restaurantWelcome-Text {
-    font-size: 7rem;
-  }
-}
-
-@media (min-width:1000px) {
-  #restaurantWelcome-Text {
+@media (min-width: 700px) {
+  
+  #restaurantWelcome-Text {                                    
     font-size: 9rem;
+    padding: 20%;
   }
 }
-
