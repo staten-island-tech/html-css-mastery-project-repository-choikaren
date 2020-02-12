@@ -10,6 +10,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 .navigationBar-banner {
@@ -190,12 +191,12 @@ html {
 
 @media (min-width: 1000px) {
   .banner-buttons {
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
     font-size: 2rem;
   }
   .banner {
     text-align: right;
-    padding-right: 12rem;
+    padding-right: 14rem;
   }
 }
 
@@ -237,22 +238,22 @@ html {
 }
 
 .chineseCuisine {
-  background-image: url("img/dimSum.jpg");
-  background-position: center;
+  background-image: url("img/dinner.jpg");
+  background-position: right;
   background-attachment: fixed;
 }
 
 #chineseCuisine {
   padding: 1.75rem;
   background-color: #fff3d2;
-  height: 40vh;
+  height: 25vh;
 }
 
 #chineseCuisine-Text {
   color: #ffc400;
 }
 
-.image-front {
+.categoryOne-image {
   margin-top: 3rem;
   margin-bottom: 5rem;
   width: 90%;
@@ -262,7 +263,7 @@ html {
   transition: ease-in-out 0.25s;
 }
 
-.image-front:hover {
+.categoryOne-image:hover {
   outline-offset: 0;
 }
 
@@ -281,6 +282,13 @@ html {
   text-align: center;
   color: #660700;
   padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menuSection-categoryItems {
@@ -301,6 +309,9 @@ html {
 }
 
 @media (min-width: 700px) {
+  #chineseCuisine {
+    height: 30vh;
+  }
   .image-front {
     width: 85%;
   }
@@ -317,8 +328,11 @@ html {
 }
 
 @media (min-width: 1000px) {
+  #chineseCuisine {
+    height: 35vh;
+  }
   .image-front {
-    width: 80%;
+    width: 70%;
   }
   .menuSection-category {
     font-size: 4.5rem;
