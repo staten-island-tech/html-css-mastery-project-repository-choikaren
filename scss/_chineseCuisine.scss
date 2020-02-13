@@ -47,9 +47,9 @@
     flex-direction: column;
   }
 
-  .menuSection-category:target  {
+  // .menuSection-category:target  {
    
-  }
+  // }
 
 
   .menuSection-categoryItems {
@@ -61,7 +61,7 @@
     padding: 3rem;
   }
 
-  .image-front {
+  .categoryOne-image {
     width: 80%;
   }
 
@@ -78,8 +78,8 @@
       height: 30vh;
     }
 
-    .image-front {
-      width: 85%;
+    .categoryOne-image {
+      width: 80%;
    }
 
    .menuSection-category {
@@ -102,7 +102,7 @@
 
     .menuSection-category {
       font-size: 4.5rem;
-      padding: 6rem 4rem;
+      // padding: 6rem 4rem;
     }
 
   }

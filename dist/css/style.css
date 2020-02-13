@@ -196,7 +196,7 @@ html {
   }
   .banner {
     text-align: right;
-    padding-right: 14rem;
+    padding-right: 6rem;
   }
 }
 
@@ -252,6 +252,8 @@ html {
   min-width: 100%;
   z-index: -1;
   background-color: #660700;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #restaurantWelcome-Text {
@@ -345,7 +347,7 @@ html {
   #chineseCuisine {
     padding: 3rem;
   }
-  .image-front {
+  .categoryOne-image {
     width: 80%;
   }
   .menuSection-category {
@@ -358,8 +360,8 @@ html {
   #chineseCuisine {
     height: 30vh;
   }
-  .image-front {
-    width: 85%;
+  .categoryOne-image {
+    width: 80%;
   }
   .menuSection-category {
     display: -webkit-box;
@@ -382,7 +384,6 @@ html {
   }
   .menuSection-category {
     font-size: 4.5rem;
-    padding: 6rem 4rem;
   }
 }
 
