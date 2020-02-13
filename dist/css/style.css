@@ -199,6 +199,52 @@ html {
   }
 }
 
+.loadingScreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation-name: loadingScreen;
+          animation-name: loadingScreen;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  z-index: 100;
+  background-color: #ffc400;
+}
+
+@-webkit-keyframes loadingScreen {
+  0% {
+    background-color: black;
+  }
+  40% {
+    background-color: black;
+  }
+  80% {
+    background-color: #660700;
+  }
+  100% {
+    background-color: #ffc400;
+  }
+}
+
+@keyframes loadingScreen {
+  0% {
+    background-color: black;
+  }
+  40% {
+    background-color: black;
+  }
+  80% {
+    background-color: #660700;
+  }
+  100% {
+    background-color: #ffc400;
+  }
+}
+
+.loadingScreen:target {
+  background-color: transparent;
+}
+
 #restaurantWelcome-Video {
   position: fixed;
   height: 100vh;
