@@ -1,0 +1,92 @@
+@import "./_variables.scss";
+
+.ourLocation {
+  background-image: url("img/dinner.jpg");
+  background-position: right;
+  background-attachment: fixed;
+}
+
+#ourLocation {
+  padding: 1.75rem;
+  background-color: $mainRed;
+  height: 25vh;
+}
+
+.location {
+  background-color: $mainRed;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 3rem;
+}
+
+.location-description {
+  margin: 10%;
+  color: $mainYellow;
+  font-size: 1.5rem;
+}
+
+.location-description-title {
+  font: 2rem;
+  color: $secondaryYellow;
+  font-size: 2rem;
+}
+
+.location-map {
+  padding: 3rem;
+  padding-top: 0;
+}
+
+@media (min-width: 400px) {
+  #ourLocation {
+    padding: 3rem;
+  }
+
+  .location-description {
+    font-size: 2rem;
+  }
+
+  .location-description-title{
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width:400px) {
+  .location-map {
+    height: 10rem;
+  }
+}
+
+@media (max-width:700px) {
+  .location-map {
+    height: 25rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .location {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .location-description {
+    width: 40%;
+  }
+
+  #location-map {
+    padding-left: 15%;
+  }
+
+  .location-map {
+    margin-top: 3rem;
+  }
+
+
+
+}
+
+@media (min-width: 1000px) {
+  #location-map {
+    width: 50rem;
+  }
+}

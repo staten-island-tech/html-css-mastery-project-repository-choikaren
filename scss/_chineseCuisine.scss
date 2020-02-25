@@ -1,60 +1,49 @@
 @import "./_variables.scss";
 
-
-
 .chineseCuisine {
   background-image: url("img/dinner.jpg");
   background-position: right;
   background-attachment: fixed;
 }
 
-  #chineseCuisine {
-    padding: 1.75rem;
-    background-color:$mainYellow;
-    height: 25vh;
-  }
+#chineseCuisine {
+  padding: 1.75rem;
+  background-color: $mainYellow;
+  height: 25vh;
+}
 
-  #chineseCuisine-Text {
-    color: $secondaryYellow;
-  }
+#chineseCuisine-Text {
+  color: $secondaryYellow;
+}
 
+.categoryOne-image {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: 90%;
+  outline: 4px $secondaryYellow solid;
+  outline-offset: 1rem;
+  transition: ease-in-out 0.25s;
+}
 
+.categoryOne-image:hover {
+  outline-offset: 0;
+}
 
-  .categoryOne-image {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-    width: 90%;
-    outline: 4px $secondaryYellow solid;
-    outline-offset: 15px;
-    transition: ease-in-out 0.25s;
-  }
+.menuSection {
+  background-color: $mainYellow;
+}
 
-  .categoryOne-image:hover {
-    outline-offset: 0;
-  }
+.menuSection-category {
+  text-align: center;
+  color: $mainRed;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
 
-  .menuSection {
-    display: flex;
-    flex-direction: row;
-    background-color: $mainYellow;
-  }
+// .menuSection-category:target  {
 
-  .menuSection-category {
-    text-align: center;
-    color:$mainRed;
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  // .menuSection-category:target  {
-   
-  // }
-
-
-  .menuSection-categoryItems {
-    display: none;
-  }
+// }
 
 @media (min-width: 400px) {
   #chineseCuisine {
@@ -69,40 +58,90 @@
     font-size: 3rem;
     padding: 4rem 5rem;
   }
-
 }
 
-  @media (min-width: 700px) { 
+@media (min-width: 700px) {
+  #chineseCuisine {
+    height: 30vh;
+  }
 
-    #chineseCuisine {
-      height: 30vh;
-    }
+  .categoryOne-image {
+    width: 80%;
+  }
 
-    .categoryOne-image {
-      width: 80%;
-   }
-
-   .menuSection-category {
+  .menuSection-category {
     display: flex;
     flex-direction: row;
     font-size: 3rem;
   }
+}
 
+@media (min-width: 1000px) {
+  #chineseCuisine {
+    height: 35vh;
   }
 
-  @media (min-width: 1000px) {
-
-    #chineseCuisine {
-      height: 35vh;
-    }
-
-    .image-front {
-      width: 70%;
-    }
-
-    .menuSection-category {
-      font-size: 4.5rem;
-      // padding: 6rem 4rem;
-    }
-
+  .image-front {
+    width: 70%;
   }
+
+  .menuSection-category {
+    font-size: 4.5rem;
+  }
+
+  .menuSection {
+    padding: 3rem;
+  }
+}
+
+.categoryItems-content {
+  padding: 5rem;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  height: 70%;
+  right: 0px;
+  display: none;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+[type="radio"] {
+  display: none;
+}
+[type="radio"]:checked ~ label ~ .categoryItems-content {
+  z-index: 1;
+  display: block;
+}
+[type="radio"]:checked + label {
+  color: #555;
+  border-top: 0.5rem solid orange;
+}
+
+categoryItems-content-dinner {
+  display: flex;
+  flex-direction: row;
+}
+
+.dinnercategories {
+  color: $mainRed;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.dinnercategories-item {
+  color: $thirdYellow;
+  font-size: 1.5rem;
+  padding-left: 7%;
+  padding-top: 0.4rem;
+}
+
+label {
+  display: block;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid transparent;
+  width: 30%;
+  clear: both;
+  font-size: 2.25rem;
+}

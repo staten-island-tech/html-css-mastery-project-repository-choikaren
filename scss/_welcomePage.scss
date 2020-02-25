@@ -51,6 +51,7 @@
   background: $mainRed;
   color: $secondaryYellow;
   padding: 6rem 4rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 400px) {
@@ -71,4 +72,9 @@
     font-size: 9rem;
     padding: 20%;
   }
+
+  #restaurantDescription {
+    font-size: 2.5rem;
+  }
+
 }
