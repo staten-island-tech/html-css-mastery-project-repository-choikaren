@@ -1,34 +1,5 @@
 @import "./_variables.scss";
 
-.loadingScreen {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  animation-name: loadingScreen;
-  animation-duration: 2s;
-  z-index: 100;
-  background-color: $secondaryYellow;
-}
-
-@keyframes loadingScreen {
-  0% {
-    background-color: black;
-  }
-  40% {
-    background-color: black;
-  }
-  80% {
-    background-color: $mainRed;
-  }
-  100% {
-    background-color: $secondaryYellow;
-  }
-}
-
-.loadingScreen:target {
-  background-color: transparent;
-}
-
 
 #restaurantWelcome-Video {
   position: fixed;
@@ -52,6 +23,7 @@
   color: $secondaryYellow;
   padding: 6rem 4rem;
   font-size: 2rem;
+  font-family: $secondaryFont;
 }
 
 @media (min-width: 400px) {

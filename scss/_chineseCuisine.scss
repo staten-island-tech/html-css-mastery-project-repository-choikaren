@@ -95,11 +95,13 @@
 }
 
 .categoryItems-content {
-  padding: 5rem;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 3%;
   position: absolute;
   top: 0;
   left: 35%;
-  height: 70%;
+  height: 85%;
   right: 0px;
   display: none;
   overflow: scroll;
@@ -117,22 +119,25 @@
   border-top: 0.5rem solid orange;
 }
 
-categoryItems-content-dinner {
+categoryItems-content-fullCourse {
   display: flex;
   flex-direction: row;
 }
 
-.dinnercategories {
+.fullCoursecategories {
   color: $mainRed;
   font-size: 2rem;
   font-weight: bold;
+  font-family: $mainFont;
+  padding-top: 1rem;
 }
 
-.dinnercategories-item {
-  color: $thirdYellow;
+.fullCoursecategories-item {
+  color: $secondaryPink;
   font-size: 1.5rem;
-  padding-left: 7%;
-  padding-top: 0.4rem;
+  padding-left: 5%;
+  padding-top: 0.7rem;
+  font-family: $secondaryFont;
 }
 
 label {
@@ -144,4 +149,5 @@ label {
   width: 30%;
   clear: both;
   font-size: 2.25rem;
+  font-family: $secondaryFont;
 }

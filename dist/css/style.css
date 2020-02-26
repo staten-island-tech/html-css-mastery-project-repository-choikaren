@@ -200,52 +200,6 @@ html {
   }
 }
 
-.loadingScreen {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-animation-name: loadingScreen;
-          animation-name: loadingScreen;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  z-index: 100;
-  background-color: #ffc400;
-}
-
-@-webkit-keyframes loadingScreen {
-  0% {
-    background-color: black;
-  }
-  40% {
-    background-color: black;
-  }
-  80% {
-    background-color: #660700;
-  }
-  100% {
-    background-color: #ffc400;
-  }
-}
-
-@keyframes loadingScreen {
-  0% {
-    background-color: black;
-  }
-  40% {
-    background-color: black;
-  }
-  80% {
-    background-color: #660700;
-  }
-  100% {
-    background-color: #ffc400;
-  }
-}
-
-.loadingScreen:target {
-  background-color: transparent;
-}
-
 #restaurantWelcome-Video {
   position: fixed;
   height: 100vh;
@@ -266,6 +220,7 @@ html {
   color: #ffc400;
   padding: 6rem 4rem;
   font-size: 2rem;
+  font-family: "Cinzel", serif;
 }
 
 @media (min-width: 400px) {
@@ -384,11 +339,13 @@ html {
 }
 
 .categoryItems-content {
-  padding: 5rem;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 3%;
   position: absolute;
   top: 0;
   left: 35%;
-  height: 70%;
+  height: 85%;
   right: 0px;
   display: none;
   overflow: scroll;
@@ -409,7 +366,7 @@ html {
   border-top: 0.5rem solid orange;
 }
 
-categoryItems-content-dinner {
+categoryItems-content-fullCourse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,17 +376,20 @@ categoryItems-content-dinner {
           flex-direction: row;
 }
 
-.dinnercategories {
+.fullCoursecategories {
   color: #660700;
   font-size: 2rem;
   font-weight: bold;
+  font-family: "Yeseva One", cursive;
+  padding-top: 1rem;
 }
 
-.dinnercategories-item {
-  color: #ffa600;
+.fullCoursecategories-item {
+  color: #fc7e7e;
   font-size: 1.5rem;
-  padding-left: 7%;
-  padding-top: 0.4rem;
+  padding-left: 5%;
+  padding-top: 0.7rem;
+  font-family: "Cinzel", serif;
 }
 
 label {
@@ -441,6 +401,7 @@ label {
   width: 30%;
   clear: both;
   font-size: 2.25rem;
+  font-family: "Cinzel", serif;
 }
 
 .ourLocation {
@@ -558,7 +519,5 @@ label {
 
 .content {
   position: relative;
-  font-family: "Cinzel", serif;
-  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
