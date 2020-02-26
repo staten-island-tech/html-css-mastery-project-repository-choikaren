@@ -24,7 +24,7 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, from(#310300), to(rgba(255, 0, 0, 0)));
   background: linear-gradient(to bottom, #310300, rgba(255, 0, 0, 0));
   font-weight: bold;
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel";
   cursor: pointer;
   color: #660700;
   position: fixed;
@@ -67,7 +67,7 @@ html {
   background-color: inherit;
   border: none;
   font-weight: bold;
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel";
   cursor: pointer;
   color: #660700;
   -webkit-transition: all 0.1s ease-out;
@@ -98,7 +98,7 @@ html {
   border: none;
   background-color: inherit;
   font-weight: bold;
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel";
   cursor: pointer;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
@@ -108,7 +108,7 @@ html {
 #menu-button-text {
   margin: auto;
   font-size: 2.5rem;
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel";
   color: #ffc400;
 }
 
@@ -131,7 +131,7 @@ html {
   padding: 0.5rem 3rem;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel";
   text-shadow: 0.1rem 0.1rem 0.1rem #660700;
   cursor: pointer;
   color: #ffc400;
@@ -210,27 +210,19 @@ html {
      object-fit: cover;
 }
 
-#restaurantWelcome-Text {
-  letter-spacing: .5rem;
-}
-
 #restaurantDescription {
   text-align: center;
   background: #660700;
   color: #ffc400;
   padding: 6rem 4rem;
   font-size: 2rem;
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel";
 }
 
 @media (min-width: 400px) {
   #restaurantWelcome-Text {
-    letter-spacing: 1rem;
     padding: 10%;
     font-size: 6.5rem;
-  }
-  .content {
-    letter-spacing: 0.5rem;
   }
 }
 
@@ -362,8 +354,8 @@ html {
 }
 
 [type="radio"]:checked + label {
-  color: #555;
-  border-top: 0.5rem solid orange;
+  color: #660700;
+  border-top: 0.5rem solid #ffc400;
 }
 
 categoryItems-content-fullCourse {
@@ -376,20 +368,20 @@ categoryItems-content-fullCourse {
           flex-direction: row;
 }
 
-.fullCoursecategories {
+.fullCourse-categories {
   color: #660700;
   font-size: 2rem;
   font-weight: bold;
-  font-family: "Yeseva One", cursive;
+  font-family: "Yeseva One";
   padding-top: 1rem;
 }
 
-.fullCoursecategories-item {
-  color: #fc7e7e;
+.fullCourse-categories-item {
+  color: black;
   font-size: 1.5rem;
   padding-left: 5%;
   padding-top: 0.7rem;
-  font-family: "Cinzel", serif;
+  font-family: "Rubik";
 }
 
 label {
@@ -401,7 +393,8 @@ label {
   width: 30%;
   clear: both;
   font-size: 2.25rem;
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel";
+  color: #ffa600;
 }
 
 .ourLocation {
@@ -426,6 +419,7 @@ label {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   padding-bottom: 3rem;
+  font-family: "Cinzel";
 }
 
 .location-description {
@@ -491,6 +485,9 @@ label {
 }
 
 @media (min-width: 1000px) {
+  #ourLocation {
+    height: 35vh;
+  }
   #location-map {
     width: 50rem;
   }
@@ -507,7 +504,7 @@ label {
 .text {
   margin: 0;
   color: #fff3d2;
-  font-family: "Yeseva One", cursive;
+  font-family: "Yeseva One";
   font-size: 5rem;
   text-align: center;
   display: table-cell;

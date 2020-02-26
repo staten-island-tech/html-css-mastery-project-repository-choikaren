@@ -115,8 +115,8 @@
   display: block;
 }
 [type="radio"]:checked + label {
-  color: #555;
-  border-top: 0.5rem solid orange;
+  color:$mainRed;
+  border-top: 0.5rem solid $secondaryYellow;
 }
 
 categoryItems-content-fullCourse {
@@ -124,7 +124,7 @@ categoryItems-content-fullCourse {
   flex-direction: row;
 }
 
-.fullCoursecategories {
+.fullCourse-categories {
   color: $mainRed;
   font-size: 2rem;
   font-weight: bold;
@@ -132,12 +132,12 @@ categoryItems-content-fullCourse {
   padding-top: 1rem;
 }
 
-.fullCoursecategories-item {
-  color: $secondaryPink;
+.fullCourse-categories-item {
+  color: black;
   font-size: 1.5rem;
   padding-left: 5%;
   padding-top: 0.7rem;
-  font-family: $secondaryFont;
+  font-family: $thirdFont;
 }
 
 label {
@@ -150,4 +150,5 @@ label {
   clear: both;
   font-size: 2.25rem;
   font-family: $secondaryFont;
+  color: $thirdYellow;
 }

@@ -13,9 +13,9 @@
   // padding-bottom: 10rem;
 }
 
-#restaurantWelcome-Text {
-  letter-spacing: .5rem;
-}
+// #restaurantWelcome-Text {
+//   letter-spacing: .5rem;
+// }
 
 #restaurantDescription {
   text-align: center;
@@ -28,14 +28,14 @@
 
 @media (min-width: 400px) {
   #restaurantWelcome-Text {
-    letter-spacing: 1rem;
+    // letter-spacing: 1rem;
     padding: 10%;
     font-size: 6.5rem;
   }
 
-  .content {
-    letter-spacing: 0.5rem;
-  }
+//   .content {
+//     letter-spacing: 0.5rem;
+//   }
 }
 
 @media (min-width: 700px) {
