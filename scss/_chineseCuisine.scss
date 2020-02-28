@@ -126,6 +126,30 @@ label {
   color: $thirdYellow;
 }
 
+
+.categoryItems-banner-buttons {
+  border: none;
+  background-color: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: $secondaryFont;
+  cursor: pointer;
+  color: $mainRed;
+  transition: all 0.1s ease-out;
+  letter-spacing: .3rem; 
+}
+
+.categoryItems-banner {
+  display: none;
+}
+
+.categoryItems-banner-buttons:hover {
+  background: $mainRed;
+  z-index: 2;
+  color: $mainYellow;
+}
+
 @media (min-width: 400px) {
   #chineseCuisine {
     padding: 3rem;
@@ -177,5 +201,19 @@ label {
 
   .menuSection {
     padding: 3rem;
+  }
+
+  .categoryItems-banner {
+    display: inline;
+    background-color: $secondaryYellow;
+  }
+  
+  .categoryItems-top {
+    background-color: $secondaryYellow;
+    text-align: center;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 3%;
   }
 }
