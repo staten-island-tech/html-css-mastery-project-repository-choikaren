@@ -18,12 +18,17 @@
   flex-direction: column-reverse;
   padding-bottom: 3rem;
   font-family: $secondaryFont;
+  justify-content: center;
 }
 
 .location-description {
   margin: 10%;
   color: $mainYellow;
   font-size: 1.5rem;
+}
+
+.location-description-block {
+  padding: 5%;
 }
 
 .location-description-title {
@@ -68,10 +73,11 @@
   .location {
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
 
   .location-description {
-    width: 40%;
+    width: 30%;
   }
 
   #location-map {

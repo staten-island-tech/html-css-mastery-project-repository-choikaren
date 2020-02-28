@@ -26,6 +26,10 @@
   font-family: $secondaryFont;
 }
 
+.restaurantDescription-Text {
+  letter-spacing: .3rem;
+}
+
 @media (min-width: 400px) {
   #restaurantWelcome-Text {
     // letter-spacing: 1rem;

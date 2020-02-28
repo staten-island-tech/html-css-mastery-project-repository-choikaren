@@ -1,140 +1,149 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="dist\css\style.css" />
-    <link rel="icon" href="dist/css\img\LOGOO.png" />
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Rubik|Yeseva+One&display=swap" rel="stylesheet"> 
-    </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="dist\css\style.css" />
+  <link rel="icon" href="dist/css\img\LOGOO.png" />
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Rubik|Yeseva+One&display=swap" rel="stylesheet">
+</head>
 
-    <section class="nagivationBar">
-      <div class="navigationBar-menu">
-        <a class="link" href="#menu">
-          <button class="menu-button">
-            <div class="text" id="menu-button-text">Menu</div class="text"> 
+<body>
+
+  <section class="nagivationBar">
+    <div class="navigationBar-menu">
+      <a class="link" href="#menu">
+        <button class="menu-button">
+          <div class="text" id="menu-button-text">Menu</div class="text">
+        </button>
+      </a>
+    </div>
+    <div id="menu" class="menu-dropDown">
+      <div>
+        <a class="link" href="#restaurantWelcome">
+          <button class="menu-dropDown-buttons">
+            <div class="buttons-text">Home</div>
           </button>
         </a>
       </div>
-      <div id="menu" class="menu-dropDown">
-        <div>
-          <a class="link" href="#restaurantWelcome">
-            <button class="menu-dropDown-buttons">
-              <div class="buttons-text">Home</div>
-            </button>
-          </a>
-        </div>
-        <div>
-          <a class="link" href="#chineseCuisine">
-            <button class="menu-dropDown-buttons">
-              <div class="buttons-text">Menus</div>
-            </button>
-          </a>
-        </div>
-
-        <div>
-          <a class="link" href="#">
-            <button class="menu-dropDown-buttons">
-              <div class="buttons-text">Our Location</div>
-            </button>
-          </a>
-        </div>
-
-        <div>
-          <a href="#"
-            ><button class="menu-dropDown-buttons">
-              <div class="buttons-text">close</div>
-            </button>
-          </a>
-        </div>
-
+      <div>
+        <a class="link" href="#chineseCuisine">
+          <button class="menu-dropDown-buttons">
+            <div class="buttons-text">Menus</div>
+          </button>
+        </a>
       </div>
 
-      <div class="navigationBar-banner">
-        <div class="banner">
-          <a class="link" href="#restaurantWelcome">
-            <button class="banner-buttons">
-              <body>
-                Home
-              </body>
-            </button>
-          </a>
-          
-          <a class="link" href="#chineseCuisine">
-            <button class="banner-buttons">
-              <body>
-                Menus
-              </body>
-            </button>
-          </a>
+      <div>
+        <a class="link" href="#">
+          <button class="menu-dropDown-buttons">
+            <div class="buttons-text">Our Location</div>
+          </button>
+        </a>
+      </div>
 
-          <a class="link" href="#ourLocation">
-            <button class="banner-buttons">
-              <body>
-                Location
-              </body>
-            </button>
-          </a>
+      <div>
+        <a href="#"><button class="menu-dropDown-buttons">
+            <div class="buttons-text">close</div>
+          </button>
+        </a>
+      </div>
 
-          <a class="link" href="#button-popUp">
-            <button class="banner-buttons">
-              <body>
-                About
-              </body>
-            </button>
-          </a>
+    </div>
 
-          <a class="link" href="#header3">
-            <button class="banner-buttons">
-              <body id="banner-buttons-contact" >
-                Contact
-              </body>
-            </button>
-          </a>
-        
+    <div class="navigationBar-banner">
+      <div class="banner">
+        <a class="link" href="#restaurantWelcome">
+          <button class="banner-buttons">
+
+            <body>
+              Home
+            </body>
+          </button>
+        </a>
+
+        <a class="link" href="#chineseCuisine">
+          <button class="banner-buttons">
+
+            <body>
+              Menus
+            </body>
+          </button>
+        </a>
+
+        <a class="link" href="#ourLocation">
+          <button class="banner-buttons">
+
+            <body>
+              Location
+            </body>
+          </button>
+        </a>
+
+        <a class="link" href="#button-popUp">
+          <button class="banner-buttons">
+
+            <body>
+              About
+            </body>
+          </button>
+        </a>
+
+        <a class="link" href="#header3">
+          <button class="banner-buttons">
+
+            <body id="banner-buttons-contact">
+              Contact
+            </body>
+          </button>
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <div id="restaurantWelcome">
+    <video id="restaurantWelcome-Video" autoplay muted loop>
+      <source src="dist/css/img\ChineseRestaurantVideo.mp4" type="video/mp4" />
+    </video>
+    <div class="background">
+      <div class="text" id="restaurantWelcome-Text">East Harbor Seafood Palace</div>
+    </div>
+  </div>
+
+  <div class="content restaurantDescription" id="restaurantDescription">
+    <div class="restaurantDescription-text"> ---- </div>
+    <div class="restaurantDescription-text">Traditional Chinese Cuisine in Bay Ridge, Brooklyn</div>
+    <div class="restaurantDescription-text"> ---- </div>
+  </div>
+
+  <div id="chineseCuisine">
+    <div class="background chineseCuisine">
+      <div class="text" id="chineseCuisine-Text"> Our Menu </div>
+    </div>
+  </div>
+
+  <div class="content menuSection">
+    <!-- <div class="menuSection-sideImage">
+        <img class="sideImage" src="dist/css/img/dinner.jpg" alt="">
+      </div> -->
+
+    <div class="menuSection-categoryItems">
+      <div class="categoryItems">
+        <input id='dimSum' type="radio" name="nav">
+        <label for='dimSum'>
+          Dim Sum
+          <img class="categoryOne-image" src="dist/css/img/dimSum.jpg" alt="">
+        </label>
+        <div class="categoryItems-content">
+          <div>I am panel A</div>
         </div>
       </div>
-      
-    </section>
 
-    <div id="restaurantWelcome" >  
-        <video id="restaurantWelcome-Video" autoplay muted loop> <source src="dist/css/img\ChineseRestaurantVideo.mp4"type="video/mp4"/> 
-        </video>
-      <div class="background" >
-        <div class="text" id="restaurantWelcome-Text">East Harbor Seafood Palace</div>
-       </div>
-    </div>
-    
-		<div class="content restaurantDescription" id="restaurantDescription" >
-      <div class="restaurantDescription-text" > ---- </div>
-      <div class="restaurantDescription-text" >Traditional Chinese Cuisine in Bay Ridge, Brooklyn</div>
-      <div class="restaurantDescription-text" > ---- </div>
-    </div>
-    
-    <div id="chineseCuisine" >
-      <div class="background chineseCuisine">
-        <div class="text" id="chineseCuisine-Text" > Our Menu </div>
-      </div>
-    </div>
-    
-		<div class="content menuSection" >
-
-      <div class="menuSection-categoryItems">
-        <div class="categoryItems">
-         <input id='dimSum' type="radio" name="nav">
-         <label for='dimSum'>
-           Dim Sum
-           <img class="categoryOne-image" src="dist/css/img/dimSum.jpg" alt="">
-          </label>
-         <div class="categoryItems-content">
-           <div>I am panel A</div>
-         </div>
-        </div>
-
-        <div class="categoryItems">
+      <div class="categoryItems">
         <input id='fullCourse' type="radio" name="nav">
         <label for='fullCourse'>
           Full Course Meal
@@ -143,111 +152,288 @@
         <div class="categoryItems-content">
           <div class="categoryItems-content-fullCourse">
             <div class="fullCourse-categories">
+              Lunch Specials
+              <li class="fullCourse-categories-item">Beef with Ginger and Scallion</li>
+              <li class="fullCourse-categories-item">Beef with Orange Flavor</li>
+              <li class="fullCourse-categories-item">Beef with Bitter Melon</li>
+              <li class="fullCourse-categories-item">Beef with Chinese Broccoli</li>
+              <li class="fullCourse-categories-item">Shredded Chicken with Gravy</li>
+              <li class="fullCourse-categories-item">Chicken with Cashew Nuts</li>
+              <li class="fullCourse-categories-item">Chicken with Orange Flavor</li>
+              <li class="fullCourse-categories-item">Sliced Chicken with Broccoli</li>
+              <li class="fullCourse-categories-item">Sweet and Sour Chicken</li>
+              <li class="fullCourse-categories-item">Sliced Chicken with Straw Mushroom</li>
+              <li class="fullCourse-categories-item">Sesame Chicken</li>
+              <li class="fullCourse-categories-item">General Tso's Chicken</li>
+              <li class="fullCourse-categories-item">Spare Ribs with Bitter Melon</li>
+              <li class="fullCourse-categories-item">Pork Chop Peking Style</li>
+              <li class="fullCourse-categories-item">Salt Baked Pork Chop</li>
+              <li class="fullCourse-categories-item">Sweet and Sour Pork</li>
+              <li class="fullCourse-categories-item">Pickled Cabbage with Pork Intestine</li>
+              <li class="fullCourse-categories-item">Preserved Fish and Chicken wth Bean Curd</li>
+              <li class="fullCourse-categories-item">Preserved Fish and Chicken with Eggplant</li>
+              <li class="fullCourse-categories-item">Sour Cabbage with Squid</li>
+              <li class="fullCourse-categories-item">Eggplant with Garlic Sauce</li>
+              <li class="fullCourse-categories-item">Buddhist Delight</li>
+              <li class="fullCourse-categories-item">Preserved Fish with Chinese Broccoli</li>
+              <li class="fullCourse-categories-item">Bean Curd Szechuan Style with Meat</li>
+              <li class="fullCourse-categories-item">Braised Bean Curd with Vegetables</li>
+              <li class="fullCourse-categories-item">Baby Shrimp with Cashew Nuts</li>
+              <li class="fullCourse-categories-item">Beef Stew with Special Sauce</li>
+              <li class="fullCourse-categories-item"></li>
+              <li class="fullCourse-categories-item"></li>
+              <li class="fullCourse-categories-item"></li>
+              <li class="fullCourse-categories-item"></li>
+              <li class="fullCourse-categories-item"></li>
+              <li class="fullCourse-categories-item"></li>
+              <li class="fullCourse-categories-item"></li>
+            </div>
+            <div class="fullCourse-categories">
               Appetizers
-              <li class="appetizers fullCourse-categories-item"> Crispy Spring Roll (2) </li>
-              <li class="appetizers fullCourse-categories-item"> Fried Bean Curd Skin Vegetable Roll (2) </li>
-              <li class="appetizers fullCourse-categories-item"> Chicken Feet Cold Served </li>
-              <li class="appetizers fullCourse-categories-item"> Fried Squid w. Minced Dry Garlic Style </li>
-              <li class="appetizers fullCourse-categories-item"> Salted Baked Silver Anchovy </li>
-              <li class="appetizers fullCourse-categories-item"> Fried Seafood Roll (6) </li>
-              <li class="appetizers fullCourse-categories-item"> Cold Jelly Fish </li>
-              <li class="appetizers fullCourse-categories-item"> Fried Shrimp Ball (6) </li>
-              <li class="appetizers fullCourse-categories-item"> Preserved Duck Egg </li>
-              <li class="appetizers fullCourse-categories-item"> Cold Jelly Fish Head </li>
-              <li class="appetizers fullCourse-categories-item"> Jelly Fish </li>
-              <li class="appetizers fullCourse-categories-item"> Duck Tongue </li>
+              <li class="fullCourse-categories-item"> Crispy Spring Roll (2) </li>
+              <li class="fullCourse-categories-item"> Fried Bean Curd Skin Vegetable Roll (2) </li>
+              <li class="fullCourse-categories-item"> Chicken Feet Cold Served </li>
+              <li class="fullCourse-categories-item"> Fried Squid w. Minced Dry Garlic Style </li>
+              <li class="fullCourse-categories-item"> Salted Baked Silver Anchovy </li>
+              <li class="fullCourse-categories-item"> Fried Seafood Roll (6) </li>
+              <li class="fullCourse-categories-item"> Cold Jelly Fish </li>
+              <li class="fullCourse-categories-item"> Fried Shrimp Ball (6) </li>
+              <li class="fullCourse-categories-item"> Preserved Duck Egg </li>
+              <li class="fullCourse-categories-item"> Cold Jelly Fish Head </li>
+              <li class="fullCourse-categories-item"> Jelly Fish </li>
+              <li class="fullCourse-categories-item"> Duck Tongue </li>
             </div>
 
             <div class="fullCourse-categories">
               Soup
-              <li class="soup fullCourse-categories-item"> Minced Chicken </li>
-              <li class="soup fullCourse-categories-item"> Hot and Sour Soup </li>
-              <li class="soup fullCourse-categories-item"> Minced Beef </li>
-              <li class="soup fullCourse-categories-item"> Subgum Winter Melon Soup </li>
-              <li class="soup fullCourse-categories-item"> Seafood </li>
-              <li class="soup fullCourse-categories-item"> Bamboo Pits </li>
-              <li class="soup fullCourse-categories-item"> Fish Maws </li>
-              <li class="soup fullCourse-categories-item"> Sliced Fish </li>
-              <li class="soup fullCourse-categories-item"> Frogs </li>
-              <li class="soup fullCourse-categories-item"> Dry Scallops </li>
-              <li class="soup fullCourse-categories-item"> Dry Scallop </li>
+              <li class="fullCourse-categories-item"> Minced Chicken </li>
+              <li class="fullCourse-categories-item"> Hot and Sour Soup </li>
+              <li class="fullCourse-categories-item"> Minced Beef </li>
+              <li class="fullCourse-categories-item"> Subgum Winter Melon Soup </li>
+              <li class="fullCourse-categories-item"> Seafood </li>
+              <li class="fullCourse-categories-item"> Bamboo Pits </li>
+              <li class="fullCourse-categories-item"> Fish Maws </li>
+              <li class="fullCourse-categories-item"> Sliced Fish </li>
+              <li class="fullCourse-categories-item"> Frogs </li>
+              <li class="fullCourse-categories-item"> Dry Scallops </li>
+              <li class="fullCourse-categories-item"> Dry Scallop </li>
             </div>
             <div class="fullCourse-categories">
               Noodle Soup
+              <li class="fullCourse-categories-item">Shredded Ham</li>
+              <li class="fullCourse-categories-item">Beef Noodle Soup</li>
+              <li class="fullCourse-categories-item">Shredded Pork with Pickled Vegetable</li>
+              <li class="fullCourse-categories-item">Beef Stew</li>
+              <li class="fullCourse-categories-item">Shredded Duck Meat with Pickled Vegetable</li>
+              <li class="fullCourse-categories-item">Crabmeat with Lobster Sauce (Large)</li>
+              <li class="fullCourse-categories-item">Seafood (Large)</li>
             </div>
             <div class="fullCourse-categories">
               Shark's Fin
+              <li class="fullCourse-categories-item">Braised Superior Shark's Fun Soup</li>
+              <li class="fullCourse-categories-item">Braised Seafood Shark's Fin Soup</li>
+              <li class="fullCourse-categories-item">Shredded Chicken</li>
+              <li class="fullCourse-categories-item">Crab Meat</li>
             </div>
             <div class="fullCourse-categories">
               Abalone & Sea Cucumber
+              <li class="fullCourse-categories-item">Fish Max & Gose's Palm</li>
+              <li class="fullCourse-categories-item">Braised Sea Cucumber</li>
+              <li class="fullCourse-categories-item">Sliced Abalone</li>
+              <li class="fullCourse-categories-item">Sliced Abolone and Fish Maw</li>
+              <li class="fullCourse-categories-item">Braised Sea Cucumber & Slice Abalone</li>
             </div>
             <div class="fullCourse-categories">
               Duck and Squab
+              <li class="fullCourse-categories-item">Roast Duck</li>
+              <li class="fullCourse-categories-item">Peking Duck</li>
             </div>
             <div class="fullCourse-categories">
               Fish
+              <li class="fullCourse-categories-item">Steamed Sable Fish</li>
+              <li class="fullCourse-categories-item">Fillet Grouper Cubes in Lime Sauce</li>
+              <li class="fullCourse-categories-item">Fillet Grouper Cubes</li>
+              <li class="fullCourse-categories-item">Steamed Flounder</li>
+              <li class="fullCourse-categories-item">Pan Fried Flounder</li>
+              <li class="fullCourse-categories-item">Fillet Flounder</li>
+              <li class="fullCourse-categories-item">Sauteed Fillet Flounder Cubes</li>
+              <li class="fullCourse-categories-item">Sable Fish</li>
+              <li class="fullCourse-categories-item">Sauteed Flounder Cubes</li>
             </div>
             <div class="fullCourse-categories">
               Seafood
+              <li class="fullCourse-categories-item">Salt Baked Squid</li>
+              <li class="fullCourse-categories-item">Snail</li>
+              <li class="fullCourse-categories-item">Squid</li>
+              <li class="fullCourse-categories-item">Seafood</li>
+              <li class="fullCourse-categories-item">Braised Scallop in Brown Sauce</li>
+              <li class="fullCourse-categories-item">Scallop</li>
+              <li class="fullCourse-categories-item">Dry Squid</li>
+              <li class="fullCourse-categories-item">Sauteed Sliced Conch w. Asparagus</li>
+              <li class="fullCourse-categories-item">Fried Bean Curd</li>
             </div>
             <div class="fullCourse-categories">
               Shrimp, Crab, Lobster
+              <li class="fullCourse-categories-item">Shrimp</li>
+              <li class="fullCourse-categories-item">Kung-Po Shrimp</li>
+              <li class="fullCourse-categories-item">Shrimp with Cashew Nuts</li>
+              <li class="fullCourse-categories-item">Shrimp with Szechuan Sauce</li>
+              <li class="fullCourse-categories-item">Prawns</li>
+              <li class="fullCourse-categories-item">Jumbo Shrimp</li>
+              <li class="fullCourse-categories-item">Salt Baked Prawns</li>
+              <li class="fullCourse-categories-item">Prawns</li>
+              <li class="fullCourse-categories-item">Fried Milk</li>
+              <li class="fullCourse-categories-item">Prawns w. Walnut in Orange Flavor</li>
+              <li class="fullCourse-categories-item">Prawns with Fried Bean Curd in Dry Fried Garlic</li>
             </div>
             <div class="fullCourse-categories">
               Beef
+              <li class="fullCourse-categories-item">Sliced Beef with Black Muschroom and Bamboo Shoots</li>
+              <li class="fullCourse-categories-item">Sliced Beef with Bitter Melon</li>
+              <li class="fullCourse-categories-item">Sliced Beef with Broccoli</li>
+              <li class="fullCourse-categories-item">Sauteed CHickedn & Beef in Taro Nest</li>
+              <li class="fullCourse-categories-item">Veal Chops</li>
+              <li class="fullCourse-categories-item">Fillet Steak w. Chinese Broccoli</li>
+              <li class="fullCourse-categories-item">Fillet Steak w. Onion & Sweet Tomato Sauce</li>
+              <li class="fullCourse-categories-item">T-Bone Steak</li>
+              <li class="fullCourse-categories-item">Sauteed Steak Cubes</li>
             </div>
             <div class="fullCourse-categories">
               Chicken
+              <li class="fullCourse-categories-item">Chicken Cubes in Sweet & Sour Sauce </li>
+              <li class="fullCourse-categories-item">Diced Chicken w. Cashew Nuts</li>
+              <li class="fullCourse-categories-item">DIced Chicken w. Peanuts & Hot Pepper</li>
+              <li class="fullCourse-categories-item">Crispy Chicken with Bone</li>
+              <li class="fullCourse-categories-item">Steamed Chicken in House Special Sauce with Bone</li>
+              <li class="fullCourse-categories-item">Sliced Chicken</li>
+              <li class="fullCourse-categories-item">Sizzling Chicken in Satay Sauce</li>
+              <li class="fullCourse-categories-item">Crispy Chicken</li>
+              <li class="fullCourse-categories-item">Steamed Chicken with Giner & Scallion Sauce</li>
+              <li class="fullCourse-categories-item">Steamed Chicken with Mustard Green in White Sauce with Bone</li>
+              <li class="fullCourse-categories-item">Chicken</li>
+              <li class="fullCourse-categories-item">Steamed Chicken</li>
             </div>
             <div class="fullCourse-categories">
               Pork
+              <li class="fullCourse-categories-item">Diced Pork</li>
+              <li class="fullCourse-categories-item">Sweet and Sour Pork</li>
+              <li class="fullCourse-categories-item">Pork Chop</li>
+              <li class="fullCourse-categories-item">Fried Pork Chop</li>
+              <li class="fullCourse-categories-item">Crispy Fried Pork Intestine</li>
+              <li class="fullCourse-categories-item">Steamed Minced Pork</li>
+              <li class="fullCourse-categories-item">Pan Fried Minced Pork</li>
+              <li class="fullCourse-categories-item">Sauteed Pork Intestine</li>
             </div>
             <div class="fullCourse-categories">
               Chef's Specialties
+              <li class="fullCourse-categories-item">Fried Mini Buns (8)</li>
+              <li class="fullCourse-categories-item">Diced Spare Ribs</li>
+              <li class="fullCourse-categories-item">Beed Stew Casserole</li>
+              <li class="fullCourse-categories-item">Jelly Fish</li>
+              <li class="fullCourse-categories-item">Sauteed Duck Tongue</li>
+              <li class="fullCourse-categories-item">Stuffed Pig's Intestine</li>
+              <li class="fullCourse-categories-item">Pork Stomach</li>
+              <li class="fullCourse-categories-item">Frog</li>
+              <li class="fullCourse-categories-item">Dry Squid and Pork Stomach</li>
+              <li class="fullCourse-categories-item">Lamb Chop w. House Special Sauce</li>
+              <li class="fullCourse-categories-item">Lamb Chop with Fresh Garlic and Scallion</li>
+              <li class="fullCourse-categories-item">Goose Intestine in Soy Sauce</li>
+              <li class="fullCourse-categories-item">Goose Intestine in XO Sauce</li>
+              <li class="fullCourse-categories-item">Sauteed Sea Clam</li>
             </div>
             <div class="fullCourse-categories">
               Rice Noodle, Egg Noodle & Rice
+              <li class="fullCourse-categories-item">Mei Fun</li>
+              <li class="fullCourse-categories-item">Singapore Mei Fun Curry Flavor</li>
+              <li class="fullCourse-categories-item">Beef Chow Fun (Dry)</li>
+              <li class="fullCourse-categories-item">Pan Fried Noodle</li>
+              <li class="fullCourse-categories-item">Braised Rice Noodle</li>
+              <li class="fullCourse-categories-item">Shredded Pork & Pickled Cabbage</li>
+              <li class="fullCourse-categories-item">Shredded Pork Chicken Ham</li>
+              <li class="fullCourse-categories-item">Beef Chow Fun</li>
+              <li class="fullCourse-categories-item">Pan Fried Noodle</li>
+              <li class="fullCourse-categories-item">Beef Stew Chow Fun Noodle in Brown Sauce</li>
+              <li class="fullCourse-categories-item">Baby Shrimp Chow Fun in Lobster Sauce</li>
+              <li class="fullCourse-categories-item">Braised Rice Noodle</li>
+              <li class="fullCourse-categories-item">Pan Fried Noodle with Seafood</li>
+              <li class="fullCourse-categories-item">Beef and Chicken</li>
+              <li class="fullCourse-categories-item">Fish Cake Chow Fun</li>
+              <li class="fullCourse-categories-item">Pan Fried Noodle</li>
+              <li class="fullCourse-categories-item">Cantonese Flat Noodle</li>
+              <li class="fullCourse-categories-item">Chicken and Shrimp Fried Rice</li>
+              <li class="fullCourse-categories-item">Dry Baby Shrimp and Dry Scallop</li>
+              <li class="fullCourse-categories-item">Crab Meat Dry Scallop</li>
+              <li class="fullCourse-categories-item">Diced Shrimp and Scallop Fried Rice in Brown Sauce</li>
+              <li class="fullCourse-categories-item">Diced Scallop</li>
+              <li class="fullCourse-categories-item">Pan Fried Noodle</li>
+              <li class="fullCourse-categories-item">Goose Intestine</li>
+              <li class="fullCourse-categories-item">Frog Chow Mei Fun and Chinese Celery</li>
             </div>
             <div class="fullCourse-categories">
               Rice Dishes
+              <li class="fullCourse-categories-item">Beef with Lobster Sauce on Rice</li>
+              <li class="fullCourse-categories-item">Pork Chop with Peking Sauce on Rice</li>
+              <li class="fullCourse-categories-item">Beef with Butter Melon on Rice</li>
+              <li class="fullCourse-categories-item">Squid with SOur Cabbage on Rice</li>
+              <li class="fullCourse-categories-item">Sliced Chicken with String Bean on Rice</li>
+              <li class="fullCourse-categories-item">Spare Ribs with Bitter Melon on Rice</li>
+              <li class="fullCourse-categories-item">Mixed Seafood on Rice</li>
+              <li class="fullCourse-categories-item">Beef Stew on Rice</li>
+              <li class="fullCourse-categories-item">Beef Fried Rice</li>
+              <li class="fullCourse-categories-item">Roast Pork Fried Rice</li>
+              <li class="fullCourse-categories-item">Young Chow Fried Rice</li>
+              <li class="fullCourse-categories-item">Baby Shrimp Fried Rice</li>
             </div>
           </div>
         </div>
-        </div>
-    </div>
-
-  </div>
-
-  <div id="ourLocation" >
-    <div class="background ourLocation">
-      <div class="text" id="chineseCuisine-Text" > Our Location </div>
-    </div>
-  </div>
-    
-		<div class="content location ">
-      <div class="location-map" >
-        <iframe id="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.834124372821!2d-74.01651798479152!3d40.633539950349096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2454f1d705265%3A0x365acf0bb3f8e006!2sEast%20Harbor%20Seafood%20Palace!5e0!3m2!1sen!2sus!4v1582635873626!5m2!1sen!2sus"  width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
-      <div class="location-description">
-        <div class="location-description-title" >
-          Where are we?
-        </div>
+    </div>
+
+  </div>
+
+  <div id="ourLocation">
+    <div class="background ourLocation">
+      <div class="text" id="chineseCuisine-Text"> Our Location </div>
+    </div>
+  </div>
+
+  <div class="content location ">
+    <div class="location-map">
+      <iframe id="location-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.834124372821!2d-74.01651798479152!3d40.633539950349096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2454f1d705265%3A0x365acf0bb3f8e006!2sEast%20Harbor%20Seafood%20Palace!5e0!3m2!1sen!2sus!4v1582635873626!5m2!1sen!2sus"
+        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="location-description">
+
+      <div class="location-description-block" >
+        <div class="location-description-title">Where are we?</div>
         <div>
           <div>East Harbor Seafood Palace</div>
           <div>714 65th St, Brooklyn, NY 11220</div>
         </div>
       </div>
-		</div>
 
-		<div class="background">
-			<div class="text">fd</div class="text">
-		</div>
-		<div class="content">
-			<p>
-        fdsfs
-      </p>
-		</div>
+      <div class="location-description-block" >
+        <div class="location-description-title">Directions</div>
+        <div>
+          <li>N train - 8th Ave Station on 62nd St</li>
+          <li>B70 bus on 64th St, 8th Ave</li>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="background">
+    <div class="text">fd</div class="text">
+  </div>
+  <div class="content">
+    <p>
+      fdsfs
+    </p>
+  </div>
 
 
-  </body>
+</body>
+
 </html>

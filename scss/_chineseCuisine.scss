@@ -16,6 +16,24 @@
   color: $secondaryYellow;
 }
 
+// .menuSection {
+//   display: flex;
+//   flex-direction: row-reverse;
+// }
+
+// .menuSection-sideImage  {
+//   width: 55%;
+//   height: 90%;
+//   overflow: hidden;
+//   position: absolute;
+//   left: 40%;
+//   filter: opacity(0.2);
+// }
+
+// .sideImage {
+//   width: 100%;
+// }
+
 .categoryOne-image {
   margin-top: 3rem;
   margin-bottom: 5rem;
@@ -41,63 +59,11 @@
   flex-direction: column;
 }
 
-// .menuSection-category:target  {
-
-// }
-
-@media (min-width: 400px) {
-  #chineseCuisine {
-    padding: 3rem;
-  }
-
-  .categoryOne-image {
-    width: 80%;
-  }
-
-  .menuSection-category {
-    font-size: 3rem;
-    padding: 4rem 5rem;
-  }
-}
-
-@media (min-width: 700px) {
-  #chineseCuisine {
-    height: 30vh;
-  }
-
-  .categoryOne-image {
-    width: 80%;
-  }
-
-  .menuSection-category {
-    display: flex;
-    flex-direction: row;
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  #chineseCuisine {
-    height: 35vh;
-  }
-
-  .image-front {
-    width: 70%;
-  }
-
-  .menuSection-category {
-    font-size: 4.5rem;
-  }
-
-  .menuSection {
-    padding: 3rem;
-  }
-}
 
 .categoryItems-content {
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-top: 3%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 3%;
   position: absolute;
   top: 0;
   left: 35%;
@@ -107,13 +73,20 @@
   overflow: scroll;
   overflow-x: hidden;
 }
+
 [type="radio"] {
   display: none;
 }
+
 [type="radio"]:checked ~ label ~ .categoryItems-content {
   z-index: 1;
   display: block;
 }
+
+// [type="radio"]:checked ~ label ~ .menuSection-sideImage {
+//   filter: opacity(0.1);
+// }
+
 [type="radio"]:checked + label {
   color:$mainRed;
   border-top: 0.5rem solid $secondaryYellow;
@@ -151,4 +124,58 @@ label {
   font-size: 2.25rem;
   font-family: $secondaryFont;
   color: $thirdYellow;
+}
+
+@media (min-width: 400px) {
+  #chineseCuisine {
+    padding: 3rem;
+  }
+
+  .categoryOne-image {
+    width: 80%;
+  }
+
+  .menuSection-category {
+    font-size: 3rem;
+    padding: 4rem 5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  #chineseCuisine {
+    height: 30vh;
+  }
+
+  .categoryOne-image {
+    width: 80%;
+  }
+
+  .menuSection-category {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+  }
+
+  .location-map {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  #chineseCuisine {
+    height: 35vh;
+  }
+
+  .image-front {
+    width: 70%;
+  }
+
+  .menuSection-category {
+    font-size: 4.5rem;
+  }
+
+  .menuSection {
+    padding: 3rem;
+  }
 }
