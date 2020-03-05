@@ -102,7 +102,10 @@ categoryItems-content-fullCourse {
   font-size: 2rem;
   font-weight: bold;
   font-family: $mainFont;
+  margin-right: 3%;
   padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: .5rem solid $mainRed;
 }
 
 .fullCourse-categories-item {
