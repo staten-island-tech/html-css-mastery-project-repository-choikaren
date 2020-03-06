@@ -555,6 +555,46 @@ label {
   }
 }
 
+#about {
+  background-image: url(img/lake.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-text1 {
+  background-color: rgba(102, 7, 0, 0.5);
+  padding: 5%;
+  margin: 6rem;
+  margin-top: 0;
+  width: 45%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  color: #ffc400;
+}
+
+.about-text2 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#310300), to(rgba(255, 0, 0, 0)));
+  background: linear-gradient(to top, #310300, rgba(255, 0, 0, 0));
+  padding: 5%;
+}
+
+.about-text-title {
+  font-family: "Yeseva One";
+  font-size: 4rem;
+  color: #fff3d2;
+}
+
+.about-text-description {
+  font-family: "Rubik";
+  font-size: 2rem;
+}
+
+.contactUs-section {
+  color: #ffc400;
+  font-family: "Rubik";
+  font-size: 2rem;
+}
+
 .background {
   height: 100%;
   width: 100%;

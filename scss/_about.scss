@@ -1,2 +1,45 @@
 @import "./_variables.scss";
 
+#about {
+    background-image: url(img/lake.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    // padding: 6rem;
+}
+
+.about-text1 {
+    background-color: rgba($mainRed, $alpha: 0.5);
+    padding: 5%;
+    margin: 6rem;
+    margin-top: 0;
+    width: 45%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: $secondaryYellow;
+}
+
+.about-text2 {
+    background: linear-gradient(
+        to top, 
+        $secondaryRed,
+        rgba(255, 0, 0, 0)
+      );
+      padding: 5%;
+}
+
+.about-text-title {
+    font-family: $mainFont;
+    font-size: 4rem;
+    color: $mainYellow;
+}
+
+.about-text-description {
+    font-family: $thirdFont;
+    font-size: 2rem;
+}
+
+.contactUs-section {
+    color: $secondaryYellow;
+    font-family: $thirdFont;
+    font-size: 2rem;
+}
