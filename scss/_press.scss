@@ -1,19 +1,19 @@
 @import "./_variables.scss";
 
 .pressSection {
-  background-image: url("img/EastHarborFront.jpg");
+  background-image: url("img/bridge.jpg");
   background-position: center;
   background-attachment: fixed;
 }
 
 #pressSection {
   padding: 1.75rem;
-  background-color: $mainRed;
+  background-color: $secondaryYellow;
   height: 25vh;
 }
 
 .press {
-  background-color: $mainRed;
+  background-color: $secondaryYellow;
   padding-bottom: 3rem;
   font-family: $secondaryFont;
   justify-content: center;
@@ -24,57 +24,136 @@
 #press-header {
    text-align: center;
    padding: 3%;
+   color: $mainRed;
+   
 }
 
-.press-locations {
+.press-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5%;
+    padding-top: 0;
 }
 
-.location-cards {
+.press-cards {
     width: 85%;
     padding: 1rem;
     justify-content: center;
 }
 
-.location-cards-image {
+.press-cards-image {
     width: 100%;
     height: 70%;
     overflow: hidden;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
-.location-cards-textBox {
-    font-size: 2rem;
-    background-color: $secondaryRed;
+.press-cards-textBox {
+    font-size: 2.2rem;
+    background-color: $mainRed;
     text-align: center;
-    // width: 30rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
-.location-cards-textBox-textTitle {
+.press-cards-textBox-textTitle {
     font-style: italic;
-    line-height: 4rem;
+    line-height: 3.5rem;
+    font-family: $mainFont;
     
 }
 
-.location-cards-textBox-textLink {
+.press-cards-textBox-textLink {
     text-align: center;
     font-size: 1.5rem;
     color: $secondaryYellow;
 }
 
-.location-cards-textBox-text {
+.press-cards-textBox-text {
     padding: 1.5rem;
 }
 
+.press-cards-button {
+    border: none;
+    background-color: inherit;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: $thirdFont;
+    cursor: pointer;
+    color: $mainRed;
+    transition: all 0.1s ease-out;
+    letter-spacing: .3rem; 
+}
+
+.press-cards-button:hover {
+    background: $mainYellow;
+    z-index: 2;
+  }
+
+  .press-cards-button:hover .press-cards-textBox-textLink {
+      color: $mainRed;
+  }
+
 @media (min-width:700px) {
-    .press-locations {
+    #pressSection {
+        height: 30vh;
+    }
+
+    .press-section {
         flex-direction: row;
     }
 
-    .location-cards {
+    .press-cards {
         padding: 2rem;
         width: 50%;
+    }
+
+    .press-cards-textBox {
+        height: 17rem;
+    }
+
+    .press-cards-textBox-text {
+        padding: .75rem;
+        padding-top: 1rem;
+    }
+
+    .press-cards-textBox-textTitle {
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .press-cards-textBox {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width:1000px) {
+    
+    #pressSection {
+        height: 35vh;
+    }
+
+    .press-cards {
+        padding: 2rem;
+        width: 50%;
+    }
+
+    .press-cards-textBox {
+        height: 20rem;
+    }
+
+    .press-cards-textBox-text {
+        padding: 2rem;
+        padding-top: 1.5rem;
+        font-size: 2.20rem;
+    }
+
+    .press-cards-textBox-textTitle {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
     }
 }
