@@ -18,7 +18,7 @@
   font-family: $secondaryFont;
   justify-content: center;
   color: $mainYellow;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 #press-header {
@@ -39,7 +39,7 @@
 
 .press-cards {
     width: 85%;
-    padding: 1rem;
+    margin: 2rem;
     justify-content: center;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .press-cards-textBox {
-    font-size: 2.2rem;
+    font-size: 2rem;
     background-color: $mainRed;
     text-align: center;
     border-bottom-left-radius: 2rem;
@@ -99,6 +99,10 @@
   }
 
 @media (min-width:700px) {
+    .press {
+        font-size: 4rem;
+    }
+
     #pressSection {
         height: 30vh;
     }
@@ -108,7 +112,7 @@
     }
 
     .press-cards {
-        padding: 2rem;
+        padding: 0;
         width: 50%;
     }
 
