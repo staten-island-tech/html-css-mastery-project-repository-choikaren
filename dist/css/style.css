@@ -585,7 +585,7 @@ label {
   background: -webkit-gradient(linear, left bottom, left top, from(#310300), to(rgba(255, 0, 0, 0)));
   background: linear-gradient(to top, #310300, rgba(255, 0, 0, 0));
   padding: 5%;
-  padding-bottom: 10%;
+  padding-bottom: 5rem;
 }
 
 .about-text-title {
