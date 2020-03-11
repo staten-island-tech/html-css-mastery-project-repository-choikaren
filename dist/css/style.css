@@ -567,14 +567,15 @@ label {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  text-align: center;
 }
 
 .about-text1 {
   background-color: rgba(102, 7, 0, 0.5);
   padding: 5%;
-  margin: 6rem;
-  margin-top: 0;
-  width: 45%;
+  margin: auto;
+  margin-bottom: 7rem;
+  width: 70%;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   color: #ffc400;
@@ -584,6 +585,7 @@ label {
   background: -webkit-gradient(linear, left bottom, left top, from(#310300), to(rgba(255, 0, 0, 0)));
   background: linear-gradient(to top, #310300, rgba(255, 0, 0, 0));
   padding: 5%;
+  padding-bottom: 10%;
 }
 
 .about-text-title {
@@ -594,13 +596,19 @@ label {
 
 .about-text-description {
   font-family: "Rubik";
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .contactUs-section {
   color: #ffc400;
   font-family: "Rubik";
   font-size: 2rem;
+}
+
+@media (min-width: 700px) {
+  .about-text-description {
+    font-size: 2rem;
+  }
 }
 
 .background {
@@ -685,7 +693,6 @@ label {
 
 .press-cards-image {
   width: 100%;
-  height: 70%;
   overflow: hidden;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -736,6 +743,12 @@ label {
 
 .press-cards-button:hover .press-cards-textBox-textLink {
   color: #660700;
+}
+
+@media (min-width: 400px) {
+  #pressSection {
+    padding: 3rem;
+  }
 }
 
 @media (min-width: 700px) {

@@ -45,7 +45,7 @@
 
 .press-cards-image {
     width: 100%;
-    height: 70%;
+    // height: 70%;
     overflow: hidden;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -97,6 +97,13 @@
   .press-cards-button:hover .press-cards-textBox-textLink {
       color: $mainRed;
   }
+
+
+@media (min-width:400px) {
+    #pressSection {
+        padding: 3rem;
+    }
+}
 
 @media (min-width:700px) {
     .press {
