@@ -351,7 +351,7 @@ categoryItems-content-fullCourse {
 
 label {
   display: block;
-  padding: 1rem rem;
+  padding-top: 1rem;
   font-weight: 600;
   text-align: center;
   border: 1px solid transparent;
@@ -403,6 +403,7 @@ label {
   label {
     font-size: 2.25rem;
     margin: 3rem;
+    padding-top: 2rem;
   }
   #chineseCuisine {
     height: 30vh;
