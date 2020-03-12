@@ -35,13 +35,15 @@
 
 .navigationBar-menu:hover {
   background-color:$secondaryRed;
+  width: 50%;
 }
 
 #menu {
-  background-color: $secondaryYellow;
+  // background-color: $secondaryYellow;
+  border-top: 0.3rem $mainRed solid;
   margin: 1rem;
   text-align: center;
-  width: 35%;
+  width: 50%;
   top: 4.5rem;
   position: fixed;
   display: flex;
@@ -52,14 +54,16 @@
 
 .menu-dropDown-buttons {
   width: 100%;
-  background-color: inherit;
-  border: none;
+  background-color: $mainYellow;
+  // border: none;
+  border: .3rem $mainRed  solid;
+  border-top: none;
   font-weight: bold;
   font-family: $secondaryFont;
   cursor: pointer;
   color: $mainRed;
   transition: all 0.1s ease-out;
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 0.5rem;
   font-style: italic;
   z-index: 5;
@@ -171,6 +175,7 @@
 
   #menu {
     background-color: transparent;
+    border: none;
   }
 
   .banner-buttons {
