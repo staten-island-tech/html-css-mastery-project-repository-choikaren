@@ -41,13 +41,14 @@ html {
 
 .navigationBar-menu:hover {
   background-color: #310300;
+  width: 50%;
 }
 
 #menu {
-  background-color: #ffc400;
+  border-top: 0.3rem #660700 solid;
   margin: 1rem;
   text-align: center;
-  width: 35%;
+  width: 50%;
   top: 4.5rem;
   position: fixed;
   display: -webkit-box;
@@ -64,15 +65,16 @@ html {
 
 .menu-dropDown-buttons {
   width: 100%;
-  background-color: inherit;
-  border: none;
+  background-color: #fff3d2;
+  border: 0.3rem #660700 solid;
+  border-top: none;
   font-weight: bold;
   font-family: "Cinzel";
   cursor: pointer;
   color: #660700;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 0.5rem;
   font-style: italic;
   z-index: 5;
@@ -172,6 +174,7 @@ html {
   }
   #menu {
     background-color: transparent;
+    border: none;
   }
   .banner-buttons {
     font-size: 1.5rem;
@@ -343,7 +346,7 @@ categoryItems-content-fullCourse {
 
 label {
   display: block;
-  padding: 1rem rem;
+  padding-top: 1rem;
   font-weight: 600;
   text-align: center;
   border: 1px solid transparent;
@@ -395,6 +398,8 @@ label {
   label {
     font-size: 2.25rem;
     width: 25%;
+    margin: 3rem;
+    padding-top: 2rem;
   }
   #chineseCuisine {
     height: 30vh;
