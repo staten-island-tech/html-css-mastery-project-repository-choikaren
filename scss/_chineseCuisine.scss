@@ -7,13 +7,49 @@
 }
 
 #chineseCuisine {
-  padding: 1.75rem;
+  // padding: 1.75rem;
   background-color: $mainYellow;
-  height: 25vh;
+  height: 100vh;
 }
 
 #chineseCuisine-Text {
   color: $secondaryYellow;
+}
+
+.chineseCuisine-text-description {
+  font-size: 2rem;
+  font-family: $secondaryFont;
+  color: $mainYellow;
+  font-style: italic;
+  padding: 2rem;
+}
+
+.chineseCuisine-text-button {
+  font-size: 2.5rem;
+  background-color: $mainRed;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+#chineseCuisine-text-button {
+    border: none;
+    background-color: inherit;
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: $secondaryFont;
+    text-shadow: .1rem .1rem .1rem $mainRed;
+    cursor: pointer;
+    color: $secondaryYellow;
+    transition: all 0.1s ease-out;
+    // font-style: italic;
+    letter-spacing: .3rem;
+  
+}
+
+.chineseCuisine-text-button:hover {
+  background-color: $secondaryRed;
+  transition: ease-in-out .1s;
 }
 
 .categoryOne-image {
@@ -139,9 +175,9 @@ label {
 }
 
 @media (min-width: 400px) {
-  #chineseCuisine {
-    padding: 3rem;
-  }
+  // #chineseCuisine {
+  //   padding: 3rem;
+  // }
 
   .categoryOne-image {
     width: 80%;
@@ -161,9 +197,9 @@ label {
     padding-top: 2rem;
   }
 
-  #chineseCuisine {
-    height: 30vh;
-  }
+  // #chineseCuisine {
+  //   height: 30vh;
+  // }
 
   .categoryOne-image {
     width: 80%;
@@ -187,7 +223,9 @@ label {
 @media (min-width: 1000px) {
 
   #chineseCuisine {
-    height: 35vh;
+    // height: 35vh;
+    height: 100vh;
+    padding: 0;
   }
 
   .image-front {

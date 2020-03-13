@@ -13,6 +13,36 @@ html {
   scroll-behavior: smooth;
 }
 
+.background {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: table;
+}
+
+.text {
+  margin: 0;
+  color: #fff3d2;
+  font-family: "Yeseva One";
+  font-size: 5rem;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 0.3rem 0.3rem 0.3rem #660700;
+}
+
+.content {
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navigationBar-banner {
   visibility: hidden;
   position: absolute;
@@ -246,13 +276,48 @@ html {
 }
 
 #chineseCuisine {
-  padding: 1.75rem;
   background-color: #fff3d2;
-  height: 25vh;
+  height: 100vh;
 }
 
 #chineseCuisine-Text {
   color: #ffc400;
+}
+
+.chineseCuisine-text-description {
+  font-size: 2rem;
+  font-family: "Cinzel";
+  color: #fff3d2;
+  font-style: italic;
+  padding: 2rem;
+}
+
+.chineseCuisine-text-button {
+  font-size: 2.5rem;
+  background-color: #660700;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+#chineseCuisine-text-button {
+  border: none;
+  background-color: inherit;
+  padding: 0.5rem 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Cinzel";
+  text-shadow: 0.1rem 0.1rem 0.1rem #660700;
+  cursor: pointer;
+  color: #ffc400;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  letter-spacing: .3rem;
+}
+
+.chineseCuisine-text-button:hover {
+  background-color: #310300;
+  -webkit-transition: ease-in-out .1s;
+  transition: ease-in-out .1s;
 }
 
 .categoryOne-image {
@@ -381,9 +446,6 @@ label {
 }
 
 @media (min-width: 400px) {
-  #chineseCuisine {
-    padding: 3rem;
-  }
   .categoryOne-image {
     width: 80%;
   }
@@ -398,9 +460,6 @@ label {
     font-size: 2.25rem;
     margin: 3rem;
     padding-top: 2rem;
-  }
-  #chineseCuisine {
-    height: 30vh;
   }
   .categoryOne-image {
     width: 80%;
@@ -424,7 +483,8 @@ label {
 
 @media (min-width: 1000px) {
   #chineseCuisine {
-    height: 35vh;
+    height: 100vh;
+    padding: 0;
   }
   .image-front {
     width: 70%;
@@ -607,36 +667,6 @@ label {
   .about-text-description {
     font-size: 2rem;
   }
-}
-
-.background {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  display: table;
-}
-
-.text {
-  margin: 0;
-  color: #fff3d2;
-  font-family: "Yeseva One";
-  font-size: 5rem;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  font-weight: bold;
-  z-index: 2;
-  text-shadow: 0.3rem 0.3rem 0.3rem #660700;
-}
-
-.content {
-  position: relative;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .pressSection {
