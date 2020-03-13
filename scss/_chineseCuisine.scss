@@ -50,7 +50,7 @@
   margin-top: 3%;
   position: absolute;
   top: 0;
-  left: 30%;
+  left: 26%;
   height: 85%;
   right: 0px;
   display: none;
@@ -63,7 +63,7 @@
 }
 
 [type="radio"]:checked ~ label ~ .categoryItems-content {
-  z-index: 1;
+  // z-index: 1;
   display: block;
 }
 
@@ -179,6 +179,7 @@ label {
 
   .categoryItems-content {
     margin-left: 5%;
+    left: 30%;
   }
 
 }

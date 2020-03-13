@@ -293,7 +293,7 @@ html {
   margin-top: 3%;
   position: absolute;
   top: 0;
-  left: 30%;
+  left: 26%;
   height: 85%;
   right: 0px;
   display: none;
@@ -306,7 +306,6 @@ html {
 }
 
 [type="radio"]:checked ~ label ~ .categoryItems-content {
-  z-index: 1;
   display: block;
 }
 
@@ -397,7 +396,6 @@ label {
 @media (min-width: 700px) {
   label {
     font-size: 2.25rem;
-    width: 25%;
     margin: 3rem;
     padding-top: 2rem;
   }
@@ -420,6 +418,7 @@ label {
   }
   .categoryItems-content {
     margin-left: 5%;
+    left: 30%;
   }
 }
 
