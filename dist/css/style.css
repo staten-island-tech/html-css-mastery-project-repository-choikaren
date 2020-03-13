@@ -150,10 +150,6 @@ html {
   transition: all 0.1s ease-out;
 }
 
-.link {
-  text-decoration: none;
-}
-
 @media (min-width: 400px) {
   .navigationBar-banner {
     visibility: visible;
@@ -291,7 +287,6 @@ html {
 
 .categoryItems-content {
   margin-right: 5%;
-  margin-left: 5%;
   margin-top: 3%;
   position: absolute;
   top: 0;
@@ -352,7 +347,7 @@ label {
   font-weight: 600;
   text-align: center;
   border: 1px solid transparent;
-  width: 25%;
+  width: 20%;
   clear: both;
   font-size: 1.5rem;
   font-family: "Cinzel";
@@ -399,7 +394,7 @@ label {
 @media (min-width: 700px) {
   label {
     font-size: 2.25rem;
-    width: 30%;
+    width: 25%;
   }
   #chineseCuisine {
     height: 30vh;
@@ -418,9 +413,8 @@ label {
             flex-direction: row;
     font-size: 3rem;
   }
-  .location-map {
-    padding: 0;
-    margin-top: 0;
+  .categoryItems-content {
+    margin-left: 5%;
   }
 }
 
@@ -634,6 +628,11 @@ label {
 
 .content {
   position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .pressSection {
