@@ -400,12 +400,14 @@ categoryItems-content-fullCourse {
   border-top: 0.5rem solid #660700;
 }
 
-.fullCourse-categories-item {
+.categoryItems-content-item {
   color: black;
   font-size: 1.5rem;
   padding-left: 5%;
   padding-top: 0.7rem;
   font-family: "Rubik";
+  font-weight: bold;
+  margin-right: 3%;
 }
 
 label {

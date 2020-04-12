@@ -128,12 +128,14 @@ categoryItems-content-fullCourse {
   border-top: .5rem solid $mainRed;
 }
 
-.fullCourse-categories-item {
+.categoryItems-content-item {
   color: black;
   font-size: 1.5rem;
   padding-left: 5%;
   padding-top: 0.7rem;
   font-family: $thirdFont;
+  font-weight: bold;
+  margin-right: 3%;
 }
 
 label {
