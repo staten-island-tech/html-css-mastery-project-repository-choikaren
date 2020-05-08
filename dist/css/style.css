@@ -629,13 +629,14 @@ label {
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
+  padding: 6rem;
 }
 
 .about-text1 {
   background-color: rgba(102, 7, 0, 0.5);
   padding: 5%;
   margin: auto;
-  margin-bottom: 7rem;
+  margin-bottom: 25rem;
   width: 70%;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -643,6 +644,7 @@ label {
 }
 
 .about-text2 {
+  text-align: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#310300), to(rgba(255, 0, 0, 0)));
   background: linear-gradient(to top, #310300, rgba(255, 0, 0, 0));
   padding: 5%;
@@ -664,6 +666,10 @@ label {
   color: #ffc400;
   font-family: "Rubik";
   font-size: 2rem;
+}
+
+.phoneNumber {
+  text-decoration: none;
 }
 
 @media (min-width: 700px) {
